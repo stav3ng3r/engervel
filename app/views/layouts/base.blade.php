@@ -7,13 +7,13 @@
 
     <title>Engervel Framework</title>
 
-    <link rel="stylesheet" href="../../../public/assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="../../../public/assets/css/font-awesome.css"/>
-    <link rel="stylesheet" href="../../../public/assets/css/ace-fonts.css"/>
-    <link rel="stylesheet" href="../../../public/assets/css/ace.css"/>
-    <link rel="stylesheet" href="../../../public/assets/css/ace-skins.css"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/ace-fonts.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/ace.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/ace-skins.css') }}"/>
 
-    <script src="assets/js/ace-extra.js"></script>
+    <script src="{{ asset('assets/js/ace-extra.js') }}"></script>
  </head>
   
  <body class="no-skin">
@@ -37,6 +37,9 @@
         <div class="row">
           <div class="col-xs-12">
            <!-- page content goes here -->
+
+           Page Content
+
           </div><!-- /.col -->
         </div><!-- /.row -->
 
@@ -48,10 +51,10 @@
    </div><!-- /.main-container -->
 
    <!-- list of script files -->
-   <script src="../../../public/assets/js/jquery.js"></script>
-   <script src="../../../public/assets/js/bootstrap.js"></script>
-   <script src="../../../public/assets/js/ace-extra.js"></script>
-   <script src="../../../public/assets/js/ace.js"></script>
+   <script src="{{ asset('assets/js/jquery.js') }}"></script>
+   <script src="{{ asset('assets/js/bootstrap.js') }}"></script>
+   <script src="{{ asset('assets/js/ace-extra.js') }}"></script>
+   <script src="{{ asset('assets/js/ace.js') }}"></script>
 
  </body>
 </html>
