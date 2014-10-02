@@ -38,7 +38,9 @@
           <div class="col-xs-12">
            <!-- page content goes here -->
 
-           Page Content
+          @section('body')
+          @show
+
 
           </div><!-- /.col -->
         </div><!-- /.row -->

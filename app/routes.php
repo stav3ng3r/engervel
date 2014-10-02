@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function(){
-    return View::make('home');
+Route::post('/', function () {
+    $data = Input::all();
+    var_dump($data);
+});
+
+Route::get('/post-form', function () {
+    return View::make('form');
 });
