@@ -11,11 +11,16 @@
 |
 */
 
-Route::post('/', function () {
-    $data = Input::all();
-    var_dump($data);
-});
+// Bind route parameters
+Route::model('game', 'Game');
 
-Route::get('/post-form', function () {
-    return View::make('form');
-});
+// Show pages.
+Route::get('/', 'GamesController@index');
+Route::get('/create', 'GamesController@create');
+Route::get('/edit/{game}', 'GamesController@edit');
+Route::get('/delete/{game}', 'GamesController@delete');
+
+// Handle form submissions.
+Route::post('/create', 'GamesController@handleCreate');
+Route::post('/edit', 'GamesController@handleEdit');
+Route::post('/delete', 'GamesController@handleDelete');
